@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# Test startup file changed detection, update, & restart
-
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 set -e

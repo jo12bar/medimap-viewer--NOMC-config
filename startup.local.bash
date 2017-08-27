@@ -36,5 +36,11 @@ else
   info 'Local startup file unchanged!'
 fi
 
+# Hacky hack...
+info 'Hackily mounting USB drive with label PROVIDENCE'
+user 'THIS MEANS THAT THE USB DRIVE HAS TO BE CALLED "PROVIDENCE", INCLUDING CAPITAL LETTERS!'
+user 'Rename the drive in Windows, MacOS, etc to "PROVIDENCE" if the mounting fails.'
+sudo mount /dev/disk/by-label/PROVIDENCE /media/usb0
+
 info 'Updating local config'
 git pull origin master
